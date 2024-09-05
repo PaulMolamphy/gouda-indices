@@ -19,12 +19,14 @@ If you want to see individual scores, head over to the [interactive maps on Tabl
 ## Methodology
 The city of Gouda publishes [data](https://gouda.incijfers.nl/) on the average distance to various types of urban ammenities among residents of each neighborhood. I converted these distances into walkability and bikeability scores ranging from 0 to 100. 
 
-A 100 means that the average resident of that neighborhood can reach an ammenity using that travel mode within five minutes. This is based on an average walking speed of 0.06 km per minute, and an average biking speed of 0.25 km per minute.
-
-A 0 means that the average resident of that neighborhood has to travel for more than thirty minutes to reach their destination!
+A 100 means that the average resident of that neighborhood can reach a destination within five minutes. A 0 means that the average resident of that neighborhood has to travel for more than thirty minutes to reach their destination. Walking speed is assumed to be 0.06km per minute and biking speed is assumed to be 0.25km per minute.
 
 After calculating index scores for each ammenity, the scores were assigned weights to more accurately reflect how important each type of trip is for the average neighborhood resident. For example, access to a grocery store was weighed three times as much as access to a cinema.
 
 Once the weighed results were calculated, the scores of each neighborhood were averaged to get the final walkability and bikeability index result.
+
+Certain neighborhoods were excluded from the analysis. These are industrial areas or otherwise sparsely populated areas (<300 residents per square kilometer).
+
+![Greyed out neighborhoods](https://github.com/user-attachments/assets/3429b5f0-34ba-4d57-840e-4f49348ba316)
 
 Data cleaning and transformations were performed using Python code in a Jupyter Notebook instance hosted on [Kaggle](https://www.kaggle.com/). The code, as well as the datasets used in this analysis, can be downloaded above. The data visualization was generated using Tableau Public. The visualization, as well as the Tableau workbook file, can be downloaded from the [visualization page](https://public.tableau.com/views/GoudaWalkabilityandBikeability/GoudaAccessibilityIndices?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link). The geographic data used to generate the interactive map was downloaded from the city of Gouda's [Kaarten en Open Data](https://gis.gouda.nl/portal/page/kaarten-en-open-data;jsessionid=3CF4B18E2D748B2B707DF3DDB388ABC4) page.

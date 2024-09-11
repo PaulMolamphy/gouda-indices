@@ -1,4 +1,6 @@
 # Mapping Walking & Cycling Access in Gouda, NL
+[Link to interactive visualization.](https://public.tableau.com/app/profile/paul.molamphy/viz/GoudaWalkabilityandBikeability/GoudaAccessibilityIndices)
+
 Let's say you're a prospective homeowner looking to relocate to the compact, historic city of Gouda in the Netherlands. Or, let's say you're a city administrator who wants to know where a new bike path should be installed. Or maybe you're a researcher analyzing urban inequality on a neighborhood level.
 
 This tool can help!
